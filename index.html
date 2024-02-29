@@ -1,224 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architecture website</title>
-    <link rel="stylesheet" src="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фотографії</title>
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!-- hyperlink -->
-    <div class="link">
-        <li><a href="gallery.html">About</a></li>
-        <li><a href="gallery.html">Offers</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="gallery.html">Contacts</a></li>
-    </div>
 
-     <!-- header -->
-        <h1>Architecture website</h1>
-
-    <!-- nested blocks -->
-        <div class="nested-blocks">
-            <h1>Nested Blocks</h1>
-            <ul>
-                <li>architecture block 1</li>
-                <ul>
-                    <li>design block 1</li>
-                    <li>design block 2</li>
-                    <li>design block 3</li>
-                </ul>
-                <li>architecture block 2</li>
-                <ul>
-                    <li>design block 1</li>
-                    <li>design block 2</li>
-                    <li>design block 3</li>
-                </ul>
+    <div id="hero">
+        <div class="navbar">
+          <div class="logo">Kolizey.</div>
+          <div class="user">
+            <button type="button">Sign in</button>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">OFFERS</a></li>
+              <li><a href="#">TRAINERS</a></li>
+              <li><a href="#">PRICE</a></li>
+              <li><a href="#">CONTACTS</a></li>
             </ul>
+          </div>
         </div>
-
-    <!-- images --> 
-    <div class="images">
-        <h1>Images</h1>
-        <img src="img/img1.png" alt="Фото 1" width="500" height="330"><br>
-        <img src="img/img2.png" alt="Фото 2" width="500" height="330"><br>
-        <img src="img/img3.png" alt="Фото 3" width="500" height="330">
-    </div>
-
-     <!-- varients of text -->
-    <div class="text">
-        <h2>Varients of Text</h2>
-        <p>New architecture company</p>
-        <p><b>New architecture company</b></p>
-        <p><i>New architecture company</i></p>
-        <p><small>New architecture company</small></p>
-        <p><mark style="background-color:rgb(193, 190, 190);">New architecture company</mark></p>
-        <p><u>New architecture company</u></p>
-        <p><s>New architecture company</s></p>
-        <p>New <sub>architecture company</sub></p>
-        <p>New <sup>architecture company</sup></p>
-    </div>
-
-     <!-- special symbols -->
-    <div class="special-characters">
-        <h1>Special Symbols</h1>
-        <p>&rarr; - Arrow Right</p>
-        <p>&copy; - Copyright</p>
-        <p>&hearts; - Hearts</p>
-        <p>&sum; - N-ary summation</p>
-        <p>&euro; - Euro sign</p>
-    </div>
-
-     <!-- table -->
-    <div class="table">
-        <h2>Table</h2>
-        <table>
-            <tr>
-                 <th>Company</th>
-                 <th>Contact</th>
-                 <th>Country</th>
-            </tr>
-            <tr>
-                <td>Architecture Design Studio</td>
-                <td>John Smith</td>
-                <td>USA</td>
-              </tr>
-              <tr>
-                <td>Urban Planning Group</td>
-                <td>Jane Doe</td>
-                <td>Canada</td>
-              </tr>
-              <tr>
-                <td>Modern Architecture Inc.</td>
-                <td>David Johnson</td>
-                <td>UK</td>
-              </tr>
-        </table>
-    </div>
+        
+        <div class="container-main">
+          <h1 class="main-text">ACHIEVE YOUR FITNESS GOAL</h1>
+          <p class="text-for">Experience fitness at Kolizey, where we unlock 
+          your potential with state-of-the-art facilities and expert trainers. 
+          Join us today and unleash the champion within!</p>
+        </div>
+      </div>
     
-     <!-- lists (all) -->
-    <div class="lists">
-        <h1>Lists</h1>
-        <h2>Unordered List</h2>
-        <ul>
-            <li>Build</li>
-            <li>Your</li>
-            <li>Dream</li>
-        </ul>
-
-        <h2>Ordered List</h2>
-        <ol>
-            <li>Create</li>
-            <li>Your</li>
-            <li>Life</li>
-        </ol>
-
-        <h2>Description List</h2>
-        <dl>
-            <dt>Architecture</dt>
-            <dd> <li> build your building</li></dd>
-            <dt>Design</dt>
-            <dd> <li>create your space</li></dd>
-        </dl>
-    </div>
-
-    <!-- forms --> 
-    <h1>Forms</h1>
-    <!-- text input --> 
-    <form>
-        <label for="text-input">Email:</label>
-        <input type="text" id="firstname"><br><br>
-
-        <!-- password input --> 
-        <label for="password-input">Password Input:</label>
-        <input type="password" id="password-input"><br><br>
-
-        <!-- textarea --> 
-        <label for="textarea">Textarea:</label>
-        <textarea id="textarea" name="textarea"></textarea><br><br>
-
-        <!-- checkbox --> 
-        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
-        <label for="checkbox1">Varient 1</label><br>
-
-        <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
-        <label for="checkbox2">Varient 2</label><br>
-
-        <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3">
-        <label for="checkbox3">Varient 3</label><br><br>
-
-        <!-- radio buttons --> 
-        <input type="radio" id="radio1" name="radio1" value="radio1">
-        <label for="radio1">RadioButton1</label><br>
-
-        <input type="radio" id="radio2" name="radio2" value="radio2">
-        <label for="radio2">RadioButton2</label><br>
-
-        <input type="radio" id="radio3" name="radio3" value="radio3">
-        <label for="radio3">RadioButton3</label><br><br>
-
-        <!-- select dropdowns --> 
-        <label for="select">Select:</label>
-        <select id="select" name="select">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-        </select><br><br>
-
-         <!-- file upload --> 
-         <label for="file">File Upload:</label>
-         <input type="file" id="file" name="file"><br><br>
-         <input type="submit" value="Send" class="submit">
-    </form>
-
-
-    <!-- video --> 
-    <div class="video-container">
-        <h1>Video</h1>
-        <video  width="400" controls>
-            <source src="video/video1.mp4" type="video/mp4">
-        </video>
-    </div>
-
-
-    <!-- map --> 
-    <div class="map">
-        <h1>Map</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.6053691572!2d23.69713973865343!3d37.99083001423352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2z0JDRhNGW0L3QuCwg0JPRgNC10YbRltGP!5e0!3m2!1suk!2sua!4v1708022134248!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-   
-
-
-
-
-    <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
+      <!-- about section -->
+      <section class="about-section">
+        <div class="about-text">
+        <h2 class="head-text">AFFORDABLE HEALTH AND WELLNESS IS OUR PRIORITY AT OUR HIGH-QUALITY GYM.</h2>
+        <p>
+          Welcome to <strong><em>Gym Kolizey</em></strong>, where fitness meets excellence. We are more than just a gym;
+          we are a community dedicated to helping you <ins>achieve</ins> your fitness goals and living a 
+          healthier lifestyle.
+          Our gym facility at Kolizey is designed to <del>be not</del> inspire and motivate. With top 
+          equipment and a spacious layout, you'll find everything you need to elevate your workout 
+          experience.
+        </p>
+        <hr class="hr">
         
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
+        <!-- video -->
+          <div class="video-container">
+              <video  width="400" controls>
+                  <source src="video/gym-video.mp4" type="video/mp4">
+              </video>
+          </div>
+       </div>
+      </section>
+        <!-- price section -->
+  <section class="price-section">
+    <div class="price-table">
+    <h2 class="head-text1">OUR SCHEDULE</h2>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursay</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>9:00 AM</td>
+        <td>Yoga</td>
+        <td>Spin Class</td>
+        <td>Yoga</td>
+        <td>Body Pump</td>
+        <td>Cardio Kickboxing</td>
+        <td>Pilates</td>
+        <td>Day Off</td>
+      </tr>
+      <td>12:00 PM</td>
+        <td>Spin Class</td>
+        <td>Pilates</td>
+        <td>Pilates</td>
+        <td>Zumba</td>
+        <td>Intensive Training</td>
+        <td>Cardio Kickboxing</td>
+        <td>Day Off</td>
+      </tr>
+      <td>15:00 PM</td>
+        <td>Pilates</td>
+        <td>Cardio Kickboxing</td>
+        <td>HIIT</td>
+        <td>Cardio Kickboxing</td>
+        <td>Body Pump</td>
+        <td>HIIT</td>
+        <td>Day Off</td>
+      </tr>
+      <tr>
+        <td>6:00 PM</td>
+        <td>Intensive Training</td>
+        <td>HIIT</td>
+        <td>Zumba</td>
+        <td>Spin Class</td>
+        <td>Spin Class</td>
+        <td>Zumba</td>
+        <td>Day off</td>
+      </tr>
+      <tr>
+        <td>9:00 PM</td>
+        <td>Zumba</td>
+        <td>Body Pump</td>
+        <td>Cardio Lickboxing</td>
+        <td>Intensive Training</td>
+        <td>HIIT</td>
+        <td>Intensive Training</td>
+        <td>Day off</td>
+      </tr>
+    </table>
+   </div>
+  </section>
 
-        .submit{
-            width: 100px;
-            height: 25px;
-            font-size: 15px;
-        }
 
-        iframe {
-            width: 100%;
-            height: 400px; 
-        }
-        </style>
+  
+
+
+<!--photo section-->
+<h2 class="photo-header">Our Trainers</h2>
+<div class="photo-section">
+    <div class="photo">
+        <img src="img/tr1.png" alt="Photo 1">
+        <div class="info">
+            <h1 class="text-new">John Smith</h1>
+            <p class="text1-new">
+                Certified personal coach<br>$15/hour
+            </p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="img/tr3.png" alt="Photo 2">
+        <div class="info">
+            <h1 class="text-new">Olivia Krey</h1>
+            <p class="text1-new">
+                Certified pilates coach<br>$10/hour
+            </p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="img/tr2.png" alt="Photo 3">
+        <div class="info">
+          <h1 class="text-new">Jack Bey</h1>
+          <p class="text1-new">
+              Certified cardio kickboxing coach<br>$12/hour
+          </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- footer! -->
+<footer>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: kolizey@gmail.com</p>
+    <p>Phone: 123-345-567</p>
+  </section>
+  <p>&copy; 2024 Kolizey. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
